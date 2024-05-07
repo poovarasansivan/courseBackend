@@ -53,7 +53,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin:["https://course-api-delta.vercel.app"],
+  origin:["https://6639bfcd2788c49eaf1f4768--guileless-sopapillas-67bf3f.netlify.app"],
   methods:["POST","PUT","DELETE","GET"],
   credentials:true
 })); // Use cors middleware
