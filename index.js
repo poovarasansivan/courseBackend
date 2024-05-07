@@ -52,13 +52,11 @@ import cors from "cors";
 const app = express();
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: ["https://deploy-mern-lwhq.vercel.app"],
-    methods: ["POST", "PUT", "GET", "DELETE"],
-    credentials: true,
-  })
-); // Use cors middleware
+app.use(cors({
+  origin:["https://course-api-delta.vercel.app"],
+  methods:["POST","PUT","DELETE","GET"],
+  credentials:true
+})); // Use cors middleware
 app.use("/getdata", StudentRecord);
 app.use("/adduser", AddUser);
 app.use("/userupdate", UpdateStudent);
